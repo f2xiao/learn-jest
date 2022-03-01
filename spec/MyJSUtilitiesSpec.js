@@ -1,11 +1,16 @@
- describe("MyJSUtilities", function () {
+const utils = require("../index.js");
+
+describe("MyJSUtilities", function () {
     describe("String Utils", function () {
         // it should expect actual value to be expected value 
         it("should be able to lower case a string", function () {
-            expect().nothing();
+            expect(utils.toLowerCase).toBeDefined();
+            expect(utils.toLowerCase("HELLO WORLD")).toEqual("hello world");
         });
+
         it("should be able to upper case a string", function () {
-            expect().nothing();
+            expect(utils.toUpperCase).toBeDefined();
+            expect(utils.toUpperCase("hello world")).toEqual("HELLO WORLD")
         });
         it("should be able to confirm if a string contains a substring", function () {
             expect().nothing();

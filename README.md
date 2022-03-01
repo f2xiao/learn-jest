@@ -49,7 +49,7 @@ Group and nest suites using syntax:
 A spec declares a test case that belongs to a test suite.
 Created using syntax:
 
-    it('logic explains what the test is doing', function(){    /* ... */})
+    it('logic explains what the test is doing', function(){    /* a spec or a test */})
 
         
 ### Expectations
