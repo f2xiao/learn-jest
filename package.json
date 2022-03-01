@@ -1,0 +1,23 @@
+{
+  "name": "learn-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f2xiao/learn-jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f2xiao/learn-jest/issues"
+  },
+  "homepage": "https://github.com/f2xiao/learn-jest#readme",
+  "devDependencies": {
+    "jasmine": "^4.0.2"
+  }
+}
