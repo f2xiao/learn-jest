@@ -9,8 +9,11 @@ describe("MyJSUtilities", function () {
         });
 
         it("should be able to upper case a string", function () {
+            const spytoUpperCase = spyOn(String.prototype, 'toUpperCase').and.callFake(utils.toUpperCase);
             expect(utils.toUpperCase).toBeDefined();
-            expect(utils.toUpperCase("hello world")).toEqual("HELLO WORLD")
+            expect(utils.toUpperCase("hello world")).toEqual("HELLO WORLD");
+            expect(String.prototype.toUpperCase).toHaveBeenCalled();
+            expect(spytoUpperCase.calls.count()).toEqual(1); 
         });
         it("should be able to confirm if a string contains a substring", function () {
             expect().nothing();

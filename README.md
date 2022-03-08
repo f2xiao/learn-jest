@@ -1,5 +1,7 @@
 # learn-jest
 
+> Original Source: [An Introduction to Jasmine Unit Testing] (https://www.freecodecamp.org/news/jasmine-unit-testing-tutorial-4e757c2cbf42/)
+
 ## Getting Started
 JASMINE FOR NODE.JS
 
@@ -115,3 +117,11 @@ Jasmine provides spies which can be used to spy on/listen to method calls on obj
 Jasmine provides two ways for spying on method calls: using the spyOn() or the createSpy() methods.
 
 You can use spyOn() when the method already exists on the object, otherwise you need to use jasmine.createSpy() which returns a new function.
+
+Created using syntax: 
+
+    spyOn([ObjName], '[methodName]')
+    spytoUpperCase = spyOn(String.prototype, 'toUpperCase')
+
+The above method check if our `toUpperCase` is making use of `String.toUpperCase` by spy on the `toUpperCase` the String.prototype object.
+
